@@ -1,6 +1,4 @@
-Here’s an **even funkier** README with **MAXIMUM** emoji power! 🚀🎉🔥✨😆  
 
----
 
 # 🌟✨ E-Commerce API 🚀🛒  
 
