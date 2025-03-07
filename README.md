@@ -39,11 +39,8 @@ This backend powers **users** 🧑‍💻, **products** 🏷️, **carts** 🛒,
    npm install
    ```
 4️⃣ **Set up the PostgreSQL database & .env file 📝**  
-5️⃣ **Run database migrations (for extra awesomeness 😎)**  
-   ```sh
-   npx sequelize-cli db:migrate
-   ```
-6️⃣ **Start the API engine:**  
+
+5️⃣**Start the API engine:**  
    ```sh
    npm start
    ```
