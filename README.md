@@ -1,6 +1,6 @@
 
 
-# 🌟✨ E-Commerce API 🚀🛒  
+# 🌟✨ PGCommerce – PostgreSQL eCommerce Project
 
 ## 🌍💡 What’s This?
 Welcome to the **coolest** 🕶️ **E-Commerce API** out there!  
