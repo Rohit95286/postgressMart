@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.13.0",
+    "nodemon": "^3.1.9",
+    "sequelize": "^6.37.6"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "ecommerce",
+  "description": "Welcome to the **coolest** 🕶️ **E-Commerce API** out there!  \r This backend powers **users** 🧑‍💻, **products** 🏷️, **carts** 🛒, and **orders** 📦 like a **champ** 🏆!",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
