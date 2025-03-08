@@ -1,9 +1,42 @@
 const {Sequelize} = require("sequelize");
-const sequelize = new Sequelize("ecommerce", "root", "Test@1234", {
-  host: "localhost",
-  dialect: "mysql",
-  logging: false,
-});
+require("dotenv").config();
+
+const dbConfig = {
+  staging: {
+    db_name: "mysqlproj",
+    db_user: "root",
+    db_pass: "Test@1234",
+    cont_type: "mysql",
+    port: "localhost",
+  },
+  development: {
+    db_name: "mysqlproj",
+    db_user: "staging_user",
+    db_pass: "staging_pass",
+    cont_type: "mysql",
+    port: 3306,
+  },
+  production: {
+    db_name: "prod_db",
+    db_user: "prod_user",
+    db_pass: "prod_pass",
+    cont_type: "mysql",
+    port: 3306,
+  },
+};
+
+const environment = process.env.NODE_ENV || "staging";
+const currentConfig = dbConfig[environment];
+
+const sequelize = new Sequelize(
+  currentConfig.db_name,
+  currentConfig.db_user,
+  currentConfig.db_pass,
+  {
+    host: currentConfig.port,
+    dialect: currentConfig.cont_type,
+  }
+);
 
 sequelize
   .authenticate()
