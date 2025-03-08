@@ -94,5 +94,11 @@ This backend powers **users** 🧑‍💻, **products** 🏷️, **carts** 🛒,
 ---
 ## ✅ **Associations** 📌
 
+##One to One relation
 
-Let me know if you need any changes or additional details! 🚀
+**`User.hasOne(Cart, { foreignKey: "userId" })`** 🔗 **`Cart.belongsTo(User, { foreignKey: "userId" })`** ✅  
+##userId : {type : Integer , model : user , foriegnKey : id }
+
+##place of key  =>  allowNull = false -> user can have no cart but cart must have a useId.
+
+
