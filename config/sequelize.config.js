@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const dbConfig = {
   staging: {
-    db_name: "mysqlproj",
+    db_name: "ecommerce",
     db_user: "root",
     db_pass: "Test@1234",
     cont_type: "mysql",
