@@ -92,5 +92,7 @@ This backend powers **users** 🧑‍💻, **products** 🏷️, **carts** 🛒,
 🔥 **Use regex validation to enforce strict input formats and maintain data integrity!** 🚀
 
 ---
+## ✅ **Associations** 📌
+
 
 Let me know if you need any changes or additional details! 🚀
