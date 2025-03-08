@@ -94,11 +94,18 @@ This backend powers **users** 🧑‍💻, **products** 🏷️, **carts** 🛒,
 ---
 ## ✅ **Associations** 📌
 
-##One to One relation
+### 🛠 **One-to-One Relationship**  
 
-**`User.hasOne(Cart, { foreignKey: "userId" })`** 🔗 **`Cart.belongsTo(User, { foreignKey: "userId" })`** ✅  
-##userId : {type : Integer , model : user , foriegnKey : id }
+#### 🔹 **Relationship Definition**  
+```js
+User.hasOne(Cart, { foreignKey: "userId" });  
+Cart.belongsTo(User, { foreignKey: "userId" });  
+```
 
-##place of key  =>  allowNull = false -> user can have no cart but cart must have a useId.
+#### 🔹 **Foreign Key Placement**  
+- **`userId`** is stored in the **Cart** table.  
+- **`allowNull: false`** → A **User can exist without a Cart**, but a **Cart must have a User**.  
+
+
 
 
