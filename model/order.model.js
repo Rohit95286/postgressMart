@@ -1,5 +1,6 @@
 const {DataTypes, ENUM} = require("sequelize");
 const sequelize = require("../config/sequelize.config");
+const User = require("./user.model");
 
 const order = sequelize.define(
   "orders",
@@ -9,6 +10,13 @@ const order = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
       allowNull: false,
+    },
+    userId: {
+      type: DataTypes?.INTEGER,
+      references: {
+        model: "users",
+        key: "id",
+      },
     },
     // userId is a forign key
     // productId and quantity is multiple foriegn key
@@ -26,4 +34,12 @@ const order = sequelize.define(
   }
 );
 
+User.hasOne(order, {
+  foreignKey: "userId",
+});
+order.belongsTo(User, {
+  foreignKey: "userId",
+});
 order.sync({alter: true});
+
+module.exports = order;

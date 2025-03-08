@@ -4,7 +4,7 @@ const server = express();
 server.use(cors());
 const port = 3000;
 require("./config/sequelize.config");
-require("./model/order.model");
+require("./model/cart.model");
 server.get("/", async (req, res) => {
   res.status(200).send("server is listening right now");
 });

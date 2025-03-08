@@ -2,7 +2,7 @@ const {DataTypes, ENUM} = require("sequelize");
 const sequelize = require("../config/sequelize.config");
 
 const cart = sequelize.define(
-  "cart",
+  "carts",
   {
     id: {
       type: DataTypes.INTEGER,
@@ -14,10 +14,12 @@ const cart = sequelize.define(
     // productId and quantity is multiple foriegn key
   },
   {
-    tableName: "orders",
+    tableName: "carts",
     freezeTableName: true,
     timestamps: true,
   }
 );
 
-order.sync({alter: true});
+cart.sync({alter: true});
+
+module.exports = cart;
