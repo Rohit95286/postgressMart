@@ -25,37 +25,18 @@ This backend powers **users** 🧑‍💻, **products** 🏷️, **carts** 🛒,
 
 ---
 
-## 🏗️⚙️ Setup in 6 Easy Steps!
+## 🏗️⚙️ Setup !
 
-1️⃣ **Clone this masterpiece:**
 
-```sh
-git clone https://github.com/your-repo-name.git
-```
-
-2️⃣ **Go inside:**
-
-```sh
-cd e-commerce-api
-```
-
-3️⃣ **Install the magic potions:**
-
-```sh
-npm install
-```
-
-4️⃣ **Set up the PostgreSQL database & .env file 📝**
-
-5️⃣**Start the API engine:**
-
-```sh
-npm start
-```
 
 ---
 
-Here’s a compiled version of all the notes you requested:
+## 🛠 Database Configuration  
+
+- Supports **staging**, **development**, and **production**.  
+- Uses `NODE_ENV` to select the database settings.  
+- Defaults to **staging** if `NODE_ENV` is not set.  
+- Sequelize initializes the connection dynamically. 🚀
 
 ---
 
